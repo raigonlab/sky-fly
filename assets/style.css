@@ -124,5 +124,53 @@ footer a {
 /* Footer icons */
 footer a:hover {
     color: #ff6b00;
+    }
+    footer i {
+        font-size: 30px;
+        color: #888888;
+        transition: color 0.3s ease, transform 0.2s ease;
+    }
+    
+    footer i:hover {
+        color: #ffffff;
+        transform: scale(1.2);
+    }
+    /* =========================
+   FOOTER BASE
+   ========================= */
+
+.footer {
+    background: #000;
+    padding: 30px 20px;
+    color: #888888;
+}
+
+/* container interno */
+.footer-content {
+    display: flex;
+    flex-direction: column; /* mobile primeiro */
+    align-items: center;
+    gap: 15px;
+    text-align: center;
+}
+
+/* ícones */
+.footer-socials i {
+    font-size: 28px;
+    color: #888888;
+    margin: 0 8px;
+}
+
+/* =========================
+   DESKTOP (telas maiores)
+   ========================= */
+
+@media (min-width: 768px) {
+    .footer-content {
+        flex-direction: row; /* vira linha */
+        justify-content: space-between; /* separa esquerda/direita */
+        align-items: center;
+        text-align: left;
+    }
 }
    
