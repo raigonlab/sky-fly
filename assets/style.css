@@ -1,15 +1,43 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
-/* /* NAVBAR */ 
+/* /* NAVBAR Bootstrap */ 
 .custom-navbar {
     position: absolute;
     width: 100%;
-    background: rgba(0, 0, 0, 0.3);
-    backdrop-filter: blur(510x);
-  }
-  .navbar.custom-navbar {
-    background-color: transparent;
-  }
+    background: rgba(0, 0, 0, 0.6); /* mais contraste */
+    backdrop-filter: blur(10px);
 
+    --bs-navbar-color: #ffffff;
+    --bs-navbar-brand-color: #ffffff;
+}
+
+nav.custom-navbar .navbar-brand {
+    color: white;
+}
+
+nav.custom-navbar .navbar-nav .nav-link {
+    color: white;
+    opacity: 1;
+}
+.custom-navbar {
+    position: fixed; /* em vez de absolute */
+    top: 0;
+    left: 0;
+    z-index: 999;
+}
+.navbar-toggler {
+    border-color: white;
+}
+
+.navbar-toggler-icon {
+    filter: invert(1);
+}
+
+/* "Remove the border from the hamburger menu */
+.navbar-toggler {
+    border: none;
+    background: transparent;
+    box-shadow: none;
+}
 /* Hero Section */
 .hero {
     height: 100vh;
@@ -20,16 +48,28 @@
     align-items: center;
     
 }
+.hero::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.3); /* controla aqui */
+}
+
+.hero-content {
+    position: relative;
+    color: white;
+    text-align: center;
+}
 
 .hero-content {
     text-align: center;
-   color: black;
+   color: white;
     
 }
 /* Typography */
 body {
     font-family: 'Inter', sans-serif;
+    color: white;
 }
 
-/* NAVBAR */
 /* Footer */
