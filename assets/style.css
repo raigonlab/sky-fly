@@ -1,13 +1,27 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
-/* /* NAVBAR Bootstrap */ 
-.custom-navbar {
-    position: absolute;
-    width: 100%;
-    background: rgba(0, 0, 0, 0.6); /* mais contraste */
-    backdrop-filter: blur(10px);
 
-    --bs-navbar-color: #ffffff;
-    --bs-navbar-brand-color: #ffffff;
+/* =========================
+   NAVBAR CONTAINER
+   ========================= */
+
+   .custom-navbar {
+    position: fixed; /* keeps navbar always at the top */
+    top: 0; 
+    left: 0; 
+    width: 100%; 
+    z-index: 999; /* ensures it stays above other elements */
+
+    background: rgba(0, 0, 0, 0.6); 
+    /* semi-transparent dark background for better text contrast */
+
+    backdrop-filter: blur(10px); 
+    /* glass effect (blurs content behind the navbar) */
+
+    --bs-navbar-color: #ffffff; 
+    /* Bootstrap variable: sets default link color */
+
+    --bs-navbar-brand-color: #ffffff; 
+    /* Bootstrap variable: sets brand (logo) color */
 }
 
 nav.custom-navbar .navbar-brand {
