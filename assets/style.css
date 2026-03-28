@@ -1,5 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
-
+/* /* NAVBAR */ 
+.custom-navbar {
+    position: absolute;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.3);
+    backdrop-filter: blur(510x);
+  }
+  .navbar.custom-navbar {
+    background-color: transparent;
+  }
 
 /* Hero Section */
 .hero {
@@ -14,7 +23,7 @@
 
 .hero-content {
     text-align: center;
-   color: bisque;
+   color: black;
     
 }
 /* Typography */
