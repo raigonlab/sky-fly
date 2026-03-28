@@ -24,34 +24,49 @@
     /* Bootstrap variable: sets brand (logo) color */
 }
 
-nav.custom-navbar .navbar-brand {
-    color: white;
+/* =========================
+   BRAND (LOGO)
+   ========================= */
+
+   nav.custom-navbar .navbar-brand {
+    color: white; 
+    /* forces the brand text (sky-fly) to be white */
 }
 
-nav.custom-navbar .navbar-nav .nav-link {
-    color: white;
-    opacity: 1;
+/* =========================
+   NAVIGATION LINKS
+   ========================= */
+
+   nav.custom-navbar .navbar-nav .nav-link {
+    color: white; 
+    /* sets navigation links to white */
+
+    opacity: 1; 
+    /* removes Bootstrap default faded effect */
 }
+
 .custom-navbar {
     position: fixed; /* em vez de absolute */
     top: 0;
     left: 0;
     z-index: 999;
 }
-.navbar-toggler {
-    border-color: white;
-}
+/* =========================
+   HAMBURGER BUTTON (BORDER)
+   ========================= */
 
-.navbar-toggler-icon {
-    filter: invert(1);
-}
-
-/* "Remove the border from the hamburger menu */
-.navbar-toggler {
+   .navbar-toggler {
+    border-color: white; 
     border: none;
     background: transparent;
     box-shadow: none;
-}
+    /* makes the button border white */
+  }
+
+.navbar-toggler-icon {
+    filter: invert(1);
+} /* makes the burguer menu withe in small screen */
+
 /* Hero Section */
 .hero {
     height: 100vh;
