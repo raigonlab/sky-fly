@@ -4,7 +4,7 @@
    NAVBAR CONTAINER
    ========================= */
 
-   .custom-navbar {
+.custom-navbar {
     position: fixed; /* keeps navbar always at the top */
     top: 0; 
     left: 0; 
@@ -28,7 +28,7 @@
    BRAND (LOGO)
    ========================= */
 
-   nav.custom-navbar .navbar-brand {
+nav.custom-navbar .navbar-brand {
     color: white; 
     /* forces the brand text (sky-fly) to be white */
 }
@@ -37,7 +37,7 @@
    NAVIGATION LINKS
    ========================= */
 
-   nav.custom-navbar .navbar-nav .nav-link {
+nav.custom-navbar .navbar-nav .nav-link {
     color: white; 
     /* sets navigation links to white */
 
@@ -45,43 +45,41 @@
     /* removes Bootstrap default faded effect */
 }
 
-.custom-navbar {
-    position: fixed; /* em vez de absolute */
-    top: 0;
-    left: 0;
-    z-index: 999;
-}
 /* =========================
-   HAMBURGER BUTTON (BORDER)
+   HAMBURGER BUTTON
    ========================= */
 
-   .navbar-toggler {
-    border-color: white; 
+.navbar-toggler {
     border: none;
     background: transparent;
     box-shadow: none;
-    /* makes the button border white */
-  }
+    /* removes default button styles */
+}
 
 .navbar-toggler-icon {
     filter: invert(1);
-} /* makes the burguer menu withe in small screen */
+    /* makes the burger icon white on small screens */
+}
 
-/* Hero Section */
+/* =========================
+   HERO SECTION
+   ========================= */
+
 .hero {
     height: 100vh;
-    background:url("./images/hero-ch-sunset.png") center/cover no-repeat;
-   
+    background: url("./images/hero-ch-sunset.png") center/cover no-repeat;
+    
     display: flex;
     justify-content: center;
     align-items: center;
-    
 }
+
 .hero::before {
     content: "";
     position: absolute;
     inset: 0;
-    background: rgba(0, 0, 0, 0.3); /* controla aqui */
+    background: rgba(0, 0, 0, 0.3); 
+    /* controls overlay darkness */
 }
 
 .hero-content {
@@ -90,24 +88,80 @@
     text-align: center;
 }
 
-.hero-content {
+/* =========================
+   GALLERY
+   ========================= */
+
+.gallery-section {
+    padding: 100px 20px;
+    background: #111;
+    color: white;
     text-align: center;
-   color: white;
-    
 }
-/* Typography */
+
+.gallery-container {
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.gallery-section h2 {
+    margin-bottom: 10px;
+}
+
+.gallery-section p {
+    margin-bottom: 40px;
+    color: #aaa;
+}
+
+/* GRID */
+
+.gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 15px;
+}
+
+/* IMAGES */
+
+.gallery-grid img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 8px;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+/* HOVER */
+
+.gallery-grid img:hover {
+    transform: scale(1.05);
+    opacity: 0.9;
+}
+
+/* =========================
+   TYPOGRAPHY
+   ========================= */
+
 body {
     font-family: 'Inter', sans-serif;
     color: white;
-    height: 100vh;
-}
+    
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    }
+    
+    main {
+        flex: 1;
+    }
+
 /* =========================
-          CONTACT
+   CONTACT
    ========================= */
 
-   .contact-section {
+.contact-section {
     position: relative;
-    min-height: 100vh; /* 👈 ISSO resolve */
+    min-height: 100vh; /* ensures section fills the screen */
     padding: 100px 20px;
     background: url("./images/contact.png") center/cover no-repeat;
 }
@@ -116,62 +170,34 @@ body {
     content: "";
     position: absolute;
     inset: 0;
-    background: rgba(0, 0, 0, 0.1);
+    background: rgba(0, 0, 0, 0.7);
+    /* dark overlay for better readability */
 }
 
 .contact-container {
     position: relative;
     z-index: 1;
-}
-/* card pro form */
-.contact-container {
+
     max-width: 500px;
     margin: 0 auto;
     background: rgba(0, 0, 0, 0.6);
     padding: 30px;
     border-radius: 10px;
 }
+
+/* form elements */
+
+.form-group input,
+.form-group textarea,
 .form-group select {
+    width: 100%;
     padding: 12px;
     border-radius: 5px;
     border: none;
 }
 
 /* =========================
-          FOOTER
-   ========================= */
-
-footer {
-    background: #000;
-    padding: 30px 20px;
-    color: white;
-   }
-   /* Footer text */
-   footer {
-    text-align: center;
-    font-size: 14px;
-    text-decoration: none;
-}
-footer a {
-    color: white;
-    margin: 0 8px;
-}
-/* Footer icons */
-footer a:hover {
-    color: #ff6b00;
-    }
-    footer i {
-        font-size: 30px;
-        color: #888888;
-        transition: color 0.3s ease, transform 0.2s ease;
-    }
-    
-    footer i:hover {
-        color: #ffffff;
-        transform: scale(1.2);
-    }
-    /* =========================
-   FOOTER BASE
+   FOOTER
    ========================= */
 
 .footer {
@@ -180,32 +206,49 @@ footer a:hover {
     color: #888888;
 }
 
-/* container interno */
+/* footer text + layout */
+
 .footer-content {
     display: flex;
-    flex-direction: column; /* mobile primeiro */
+    flex-direction: column; /* mobile first */
     align-items: center;
     gap: 15px;
     text-align: center;
 }
 
-/* ícones */
-.footer-socials i {
+/* footer links */
+
+.footer a {
+    color: white;
+    margin: 0 8px;
+    text-decoration: none;
+}
+
+.footer a:hover {
+    color: #ff6b00;
+}
+
+/* footer icons */
+
+.footer i {
     font-size: 28px;
     color: #888888;
-    margin: 0 8px;
+    transition: color 0.3s ease, transform 0.2s ease;
+}
+
+.footer i:hover {
+    color: #ffffff;
+    transform: scale(1.2);
 }
 
 /* =========================
-   DESKTOP (telas maiores)
+   DESKTOP (larger screens)
    ========================= */
 
 @media (min-width: 768px) {
     .footer-content {
-        flex-direction: row; /* vira linha */
-        justify-content: space-between; /* separa esquerda/direita */
-        align-items: center;
+        flex-direction: row; /* switches to row layout */
+        justify-content: space-between; /* space between left and right */
         text-align: left;
     }
 }
-   
