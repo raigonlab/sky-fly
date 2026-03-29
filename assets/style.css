@@ -99,8 +99,43 @@
 body {
     font-family: 'Inter', sans-serif;
     color: white;
+    height: 100vh;
+}
+/* =========================
+          CONTACT
+   ========================= */
+
+   .contact-section {
+    position: relative;
+    min-height: 100vh; /* 👈 ISSO resolve */
+    padding: 100px 20px;
+    background: url("./images/contact.png") center/cover no-repeat;
 }
 
+.contact-section::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.1);
+}
+
+.contact-container {
+    position: relative;
+    z-index: 1;
+}
+/* card pro form */
+.contact-container {
+    max-width: 500px;
+    margin: 0 auto;
+    background: rgba(0, 0, 0, 0.6);
+    padding: 30px;
+    border-radius: 10px;
+}
+.form-group select {
+    padding: 12px;
+    border-radius: 5px;
+    border: none;
+}
 
 /* =========================
           FOOTER
