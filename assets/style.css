@@ -125,8 +125,9 @@ nav.custom-navbar .navbar-nav .nav-link {
 
 .gallery-grid img {
     width: 100%;
-    height: 250px;
+    height: auto;
     object-fit: cover;
+    aspect-ratio: 1 / 1; /* mantém proporção bonita */
     border-radius: 8px;
     transition: transform 0.3s ease, opacity 0.3s ease;
 }
@@ -252,3 +253,11 @@ body {
         text-align: left;
     }
 }
+/* =========================
+   SMALL SCREENS
+   ========================= */
+@media (max-width: 768px) {
+    .gallery-grid {
+      grid-template-columns: 1fr;
+    }
+  }
