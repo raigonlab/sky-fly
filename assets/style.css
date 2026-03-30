@@ -8,16 +8,16 @@
     font-family: 'Inter', sans-serif;
     color: white;
     background: #000;
-    
+    min-height: 100vh;
     display: flex;
     flex-direction: column;
-    min-height: 100vh;
+   
     }
-    body h1 {
-        font-weight: 900;
+    h1 {
+        font-weight: 700;
     }
     h2 {
-        font-weight: 900;
+        font-weight: 700;
     }
     main {
         flex: 1;
@@ -52,7 +52,7 @@
    ========================= */
 
 nav.custom-navbar .navbar-brand {
-    color: #ffffff; ;
+    color: #ffffff;
     padding-left: 15px; 
     /* forces the brand text (sky-fly) to be white */
 }
@@ -254,6 +254,7 @@ nav.custom-navbar .navbar-nav .nav-link {
     text-align: center;
     background: #111;
     color: white;
+    margin-bottom: ;
     
   }
 
@@ -453,5 +454,25 @@ input[type="date"]::-webkit-calendar-picker-indicator {
 @media (max-width: 768px) {
     .gallery-grid {
       grid-template-columns: 1fr;
+    }
+  }
+  /* tablet */
+@media (min-width: 768px) {
+    .gallery-grid {
+      grid-template-columns: repeat(3, 1fr);
+    }
+  }
+  
+  /* desktop */
+  @media (min-width: 1024px) {
+    .gallery-grid {
+      grid-template-columns: repeat(4, 1fr);
+    }
+  }
+  
+  /* telas grandes */
+  @media (min-width: 1440px) {
+    .gallery-grid {
+      grid-template-columns: repeat(5, 1fr);
     }
   }
