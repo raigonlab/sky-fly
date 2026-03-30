@@ -90,6 +90,90 @@ nav.custom-navbar .navbar-nav .nav-link {
 }
 
 /* =========================
+   FLY EXPERIENCE VIDEO
+   ========================= */
+
+.experience-hero {
+    position: relative;
+    height: 100vh;
+    overflow: hidden;
+  }
+  
+  .video-bg {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  .experience-hero::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(to bottom, rgba(0,0,0,0.6), rgba(0,0,0,0.3));
+  }
+  
+  .experience-content {
+    position: relative;
+    z-index: 2;
+    color: white;
+    text-align: center;
+    top: 50%;
+    transform: translateY(-50%);
+    padding: 0 20px;
+  }
+  
+  .experience-content h1 {
+    font-size: 3rem;
+    margin-bottom: 15px;
+  }
+  
+  .experience-content p {
+    font-size: 1.2rem;
+    margin-bottom: 25px;
+  }
+
+  /* EXPERIENCE INFO */
+  .experience-info {
+    padding: 80px 20px;
+    text-align: center;
+    background: #111;
+    color: white;
+  }
+  
+  .experience-info p {
+    max-width: 600px;
+    margin: 20px auto 0;
+    color: #aaa;
+  }
+
+  /* HIGHLIGHTS EXPERIENCE  */
+  .experience-highlights {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 60px 20px;
+    background: #000;
+    color: white;
+    text-align: center;
+  }
+  
+  @media (min-width: 768px) {
+    .experience-highlights {
+      flex-direction: row;
+      justify-content: center;
+    }
+  }
+
+  /* CTA EXPERIENCE */
+  .experience-cta {
+    padding: 80px 20px;
+    text-align: center;
+    background: #111;
+    color: white;
+  }
+
+/* =========================
    GALLERY
    ========================= */
 
