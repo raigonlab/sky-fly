@@ -1,519 +1,437 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
+
 /* =========================
    TYPOGRAPHY
    ========================= */
 
-   body {
-    margin: 0;
-    font-family: 'Inter', sans-serif;
-    color: white;
-    background: #000;
-    min-height: 100vh;
-    display: flex;
-    flex-direction: column;
-   
-    }
-    h1 {
-        font-weight: 700;
-    }
-    h2 {
-        font-weight: 700;
-    }
-    main {
-        flex: 1;
-    }
-       
+body {
+  margin: 0;
+  font-family: 'Inter', sans-serif;
+  color: white;
+  background: #000;
+
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+h1, h2 {
+  font-weight: 700;
+}
+
+main {
+  flex: 1;
+}
 
 /* =========================
-   NAVBAR CONTAINER
+   NAVBAR
    ========================= */
 
 .custom-navbar {
-    position: fixed; /* keeps navbar always at the top */
-    top: 0; 
-    left: 0; 
-    width: 100%; 
-    z-index: 999; /* ensures it stays above other elements */
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 999;
 
-    background: rgba(0, 0, 0, 0.6); 
-    /* semi-transparent dark background for better text contrast */
+  background: rgba(0, 0, 0, 0.6);
+  backdrop-filter: blur(10px);
 
-    backdrop-filter: blur(10px); 
-    /* glass effect (blurs content behind the navbar) */
-
-    --bs-navbar-color: #ffffff; 
-    /* Bootstrap variable: sets default link color */
-
-    --bs-navbar-brand-color: #ffffff; 
-    /* Bootstrap variable: sets brand (logo) color */
+  --bs-navbar-color: #ffffff;
+  --bs-navbar-brand-color: #ffffff;
 }
-
-/* =========================
-   BRAND (LOGO)
-   ========================= */
 
 nav.custom-navbar .navbar-brand {
-    color: #ffffff;
-    padding-left: 15px; 
-    /* forces the brand text (sky-fly) to be white */
+  color: #ffffff;
+  padding-left: 15px;
 }
-
-/* =========================
-   NAVIGATION LINKS
-   ========================= */
 
 nav.custom-navbar .navbar-nav .nav-link {
-    color: white; 
-    /* sets navigation links to white */
-
-    opacity: 1; 
-    /* removes Bootstrap default faded effect */
+  color: white;
+  opacity: 1;
 }
 
-/* =========================
-   HAMBURGER BUTTON
-   ========================= */
-
 .navbar-toggler {
-    border: none;
-    background: transparent;
-    box-shadow: none;
-    /* removes default button styles */
+  border: none;
+  background: transparent;
+  box-shadow: none;
 }
 
 .navbar-toggler-icon {
-    filter: invert(1);
-    /* makes the burger icon white on small screens */
+  filter: invert(1);
 }
 
 /* =========================
-   HERO SECTION
+   HERO
    ========================= */
 
-   .hero {
-    position: relative; /* 👈 FALTAVA ISSO */
-    height: 100vh;
-    background: url("./images/hero-ch-sunset.png") center/cover no-repeat;
+.hero {
+  position: relative;
+  height: 100vh;
+  background: url("./images/hero-ch-sunset.png") center/cover no-repeat;
 
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .hero::before {
-    content: "";
-    position: absolute;
-    inset: 0;
-    background: rgba(0, 0, 0, 0.3); 
-    /* controls overlay darkness */
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.3);
 }
 
 .hero-content {
-    position: relative;
-    color: white;
-    text-align: center;
+  position: relative;
+  color: white;
+  text-align: center;
 }
 
 /* =========================
-   FLY EXPERIENCE VIDEO
+   EXPERIENCE VIDEO
    ========================= */
 
 .experience-hero {
-    position: relative;
-    height: 100vh;
-    overflow: hidden;
-  }
-  
-  .video-bg {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-  }
-  
-  .experience-hero::before {
-    content: "";
-    position: absolute;
-    inset: 0;
-    background: linear-gradient(to bottom, rgba(0,0,0,0.6), rgba(0,0,0,1.0));
-  }
-  
-  .experience-content {
-    position: relative;
-    z-index: 2;
-    color: white;
-    text-align: center;
-    top: 50%;
-    transform: translateY(-50%);
-    padding: 0 20px;
-  }
-  
-  .experience-content h1 {
-    font-size: 2.2rem;
-    margin-bottom: 10px;
-    font-style: bold;
-  }
-  
-  .experience-content p {
-    font-size: 1.rem;
-    margin-bottom: 25px;
-    font-style: italic;
-  }
+  position: relative;
+  height: 100vh;
+  overflow: hidden;
+}
 
-  /* EXPERIENCE INFO */
-  .experience-info {
-    padding: 80px 20px 0px;
-    text-align: center;
-    background: #111;
-    color: white;
-  }
-  
-  .experience-info p {
-    max-width: 600px;
-    margin: 20px auto 0;
-    color: #aaa;
-  }
+.video-bg {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
 
-  /* HIGHLIGHTS EXPERIENCE  */
+.experience-hero::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(to bottom, rgba(0,0,0,0.6), rgba(0,0,0,1));
+}
+
+.experience-content {
+  position: relative;
+  z-index: 2;
+  color: white;
+  text-align: center;
+  top: 50%;
+  transform: translateY(-50%);
+  padding: 0 20px;
+}
+
+.experience-content h1 {
+  font-size: 2.2rem;
+  margin-bottom: 10px;
+}
+
+.experience-content p {
+  font-size: 1rem;
+  margin-bottom: 25px;
+  font-style: italic;
+}
+
+/* =========================
+   EXPERIENCE INFO
+   ========================= */
+
+.experience-info {
+  padding: 80px 20px 0;
+  text-align: center;
+  background: #111;
+}
+
+.experience-info p {
+  max-width: 600px;
+  margin: 20px auto 0;
+  color: #aaa;
+}
+
+/* =========================
+   HIGHLIGHTS
+   ========================= */
+
+.experience-highlights {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 60px 20px;
+  background: #111;
+  text-align: center;
+}
+
+@media (min-width: 768px) {
   .experience-highlights {
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-    padding: 60px 20px;
-    background: #111;
-    color: white;
-    text-align: center;
-    margin: 0;
+    flex-direction: row;
+    justify-content: center;
   }
-  
-  @media (min-width: 768px) {
-    .experience-highlights {
-      flex-direction: row;
-      justify-content: center;
-    }
-  }
+}
 
-  /* TESTEMUNIAL CARDS */
+/* =========================
+   TESTIMONIALS
+   ========================= */
 
-  .testimonials {
-    padding: 80px 20px;
-    background: #000;
-    color: white;
-    text-align: center;
-  }
-  
-  .testimonials h2 {
-    margin-bottom: 50px;
-  }
-  
-  /* GRID */
+.testimonials {
+  padding: 80px 20px;
+  background: #000;
+  text-align: center;
+}
+
+.testimonials h2 {
+  margin-bottom: 50px;
+}
+
+.testimonials-grid {
+  display: grid;
+  gap: 20px;
+}
+
+@media (min-width: 768px) {
   .testimonials-grid {
-    display: grid;
-    gap: 20px;
+    grid-template-columns: repeat(3, 1fr);
   }
-  
-  @media (min-width: 768px) {
-    .testimonials-grid {
-      grid-template-columns: repeat(3, 1fr);
-    }
-  }
-  
-  /* CARD */
-  .testimonial-card {
-    background: rgba(255, 255, 255, 0.05);
-    padding: 25px;
-    border-radius: 12px;
-    backdrop-filter: blur(10px);
-    transition: transform 0.3s ease;
-  }
-  
-  .testimonial-card:hover {
-    transform: translateY(-5px);
-  }
-  
-  /* TEXT */
-  .testimonial-card p {
-    font-size: 0.95rem;
-    color: #ccc;
-  }
-  
-  /* STARS */
-  .stars {
-    margin: 15px 0;
-    color: #efd331;
-  }
-  
-  /* NAME */
-  .testimonial-card span {
-    font-size: 0.85rem;
-    color: #fff;
-  }
+}
 
-  /* CTA EXPERIENCE */
-  .experience-cta {
-    padding: 90px 20px;
-    text-align: center;
-    background: #111;
-    color: white;
-    align-content: center;
-           
-  }
+.testimonial-card {
+  background: rgba(255, 255, 255, 0.05);
+  padding: 25px;
+  border-radius: 12px;
+  backdrop-filter: blur(10px);
+  transition: transform 0.3s ease;
+}
 
-  .experience-cta {
-    padding: 140px 20px;
-  }
+.testimonial-card:hover {
+  transform: translateY(-5px);
+}
 
-  /* BUTTON CTA */
-  .cta-button {
-    display: inline-block;
-    padding: 12px 28px;
-    border-radius: 30px;
-    margin-top: 10px;
-  
-    background: rgb(5, 67, 133);
-    color: rgb(254, 254, 254);
-    text-decoration: none;
-  
-    font-weight: 500;
-    transition: all 0.3s ease;
+.testimonial-card p {
+  font-size: 0.95rem;
+  color: #ccc;
+}
 
-    /* remove bootstrap shadow from formular button" */
-    border: none;
-    outline: none;
-    box-shadow: none;
-  }
-  
-  
-  .cta-button:hover {
-    background: #093468;
-    transform: translateY(2px);
-  }
+.stars {
+  margin: 15px 0;
+  color: #efd331;
+}
+
+.testimonial-card span {
+  font-size: 0.85rem;
+}
+
+/* =========================
+   CTA
+   ========================= */
+
+.experience-cta {
+  padding: 140px 20px;
+  text-align: center;
+  background: #111;
+}
+
+/* =========================
+   BUTTON
+   ========================= */
+
+.cta-button {
+  display: inline-block;
+  padding: 12px 28px;
+  border-radius: 30px;
+  margin-top: 10px;
+
+  background: rgb(5, 67, 133);
+  color: white;
+  text-decoration: none;
+
+  font-weight: 500;
+  transition: all 0.3s ease;
+
+  border: none;
+  outline: none;
+  box-shadow: none;
+}
+
+.cta-button:hover {
+  background: #093468;
+  transform: translateY(2px);
+}
 
 /* =========================
    GALLERY
    ========================= */
 
 .gallery-section {
-    padding: 100px 20px;
-    background: #111;
-    color: white;
-    text-align: center;
-    
-}
-
-.gallery-container {
-    width: auto;
-    margin: 0 auto;
-}
-
-.gallery-section h2 {
-    margin-bottom: 10px;
+  padding: 100px 20px;
+  background: #111;
+  text-align: center;
 }
 
 .gallery-section p {
-    margin-bottom: 40px;
-    color: #aaa;
+  margin-bottom: 40px;
+  color: #aaa;
 }
-
-/* GRID */
 
 .gallery-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 15px;
+  display: grid;
+  gap: 15px;
 }
-
-/* IMAGES */
 
 .gallery-grid img {
-    width: 100%;
-    height: auto;
-    object-fit: cover;
-    aspect-ratio: 1 / 1; /* ratio */
-    border-radius: 8px;
-    transition: transform 0.3s ease, opacity 0.3s ease;
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  object-fit: cover;
+  border-radius: 8px;
+  transition: transform 0.3s ease, opacity 0.3s ease;
 }
-
-/* HOVER */
 
 .gallery-grid img:hover {
-    transform: scale(1.05);
-    opacity: 0.9;
+  transform: scale(1.05);
+  opacity: 0.9;
 }
 
+/* GRID CONTROL */
+
+@media (max-width: 768px) {
+  .gallery-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (min-width: 768px) {
+  .gallery-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (min-width: 1440px) {
+  .gallery-grid {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
 
 /* =========================
    CONTACT
    ========================= */
 
 .contact-section {
-    position: relative;
-    min-height: 100vh; /* ensures section fills the screen */
-    padding: 100px 20px;
-    background: url("./images/contact.png") center/cover no-repeat;
+  position: relative;
+  min-height: 100vh;
+  padding: 100px 20px;
+  background: url("./images/contact.png") center/cover no-repeat;
 }
 
 .contact-section::before {
-    content: "";
-    position: absolute;
-    inset: 0;
-    background: rgba(0, 0, 0, 0.4);
-    /* dark overlay for better readability */
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.4);
 }
 
 .contact-container {
-    position: relative;
-    z-index: 1;
+  position: relative;
+  z-index: 1;
+  max-width: 500px;
+  margin: 0 auto;
 
-    max-width: 500px;
-    margin: 0 auto;
-    background: rgba(0, 0, 0, 0.6);
-    padding: 30px;
-    border-radius: 10px;
+  background: rgba(0, 0, 0, 0.6);
+  padding: 30px;
+  border-radius: 10px;
 }
 
-/*   Changing calendar icon color for white */
-input[type="date"]::-webkit-calendar-picker-indicator {
-    filter: invert(1);
-    cursor: pointer;
-  }
-
-/* form elements */
+/* FORM */
 
 .form-group input,
 .form-group textarea,
 .form-group select {
-    width: 100%;
-    padding: 12px;
+  width: 100%;
+  padding: 12px;
+
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+
+  color: white;
+  border-radius: 6px;
+
+  outline: none;
+}
+
+/* calendar icon */
+
+input[type="date"]::-webkit-calendar-picker-indicator {
+  filter: invert(1);
+}
+
+/* =========================
+   THANK YOU PAGE
+   ========================= */
+
+   .confirmation {
+    min-height: 100vh;
+    padding: 40px 20px;
   
-    background: rgba(255, 255, 255, 0.05); /* transparente */
-    border: 1px solid rgba(255, 255, 255, 0.1);
-  
-    color: white;
-    border-radius: 6px;
-  
-    outline: none;
-    transition: all 0.3s ease;
-  }
- /* TAHNK YOU PAGE */
- .confirmation {
-    height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
-  
-    background: url("../assets/images/contact.png") center/cover no-repeat;
-    color: white;
-    text-align: center;
-    
-  }
-  
-  
-  .confirmation-box {
-    max-width: 400px;
-    padding: 40px;
-  
-    background: rgba(255,255,255,0.05);
-    border-radius: 40px;
-    backdrop-filter: blur(10px);
-    background: rgba(0, 0, 0, 0.6);
-  }
-  
-  .confirmation h1 {
-    margin-bottom: 15px;
-  }
-  
-  .confirmation p {
-    color: #ffff;
-    margin-bottom: 25px;
-  }
+
+  background: url("../assets/images/contact.png") center/cover no-repeat;
+  text-align: center;
+}
+
+.confirmation-box {
+  max-width: 400px;
+  padding: 40px;
+
+  background: rgba(0, 0, 0, 0.6);
+  border-radius: 20px;
+  backdrop-filter: blur(10px);
+}
+
+.confirmation p {
+  margin-bottom: 25px;
+}
 
 /* =========================
    FOOTER
    ========================= */
 
 .footer {
-    background: #000;
-    padding: 30px 20px;
-    color: #888888;
+  background: #000;
+  padding: 30px 20px;
+  color: #888;
 }
-
-/* footer text + layout */
 
 .footer-content {
-    display: flex;
-    flex-direction: column; /* mobile first */
-    align-items: center;
-    gap: 15px;
-    text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+  text-align: center;
 }
 
-/* footer links */
-
 .footer a {
-    color: white;
-    margin: 0 8px;
-    text-decoration: none;
+  color: white;
+  text-decoration: none;
 }
 
 .footer a:hover {
-    color: #ff6b00;
+  color: #ff6b00;
 }
 
-/* footer icons */
-
 .footer i {
-    font-size: 28px;
-    color: #888888;
-    transition: color 0.3s ease, transform 0.2s ease;
+  font-size: 28px;
+  color: #888;
+  transition: 0.3s;
 }
 
 .footer i:hover {
-    color: #ffffff;
-    transform: scale(1.2);
+  color: #fff;
+  transform: scale(1.2);
 }
 
-/* =========================
-   DESKTOP (larger screens)
-   ========================= */
-
 @media (min-width: 768px) {
-    .footer-content {
-        flex-direction: row; /* switches to row layout */
-        justify-content: space-between; /* space between left and right */
-        text-align: left;
-    }
+  .footer-content {
+    flex-direction: row;
+    justify-content: space-between;
+  }
 }
-/* =========================
-   SMALL SCREENS
-   ========================= */
-@media (max-width: 768px) {
-    .gallery-grid {
-      grid-template-columns: 1fr;
-    }
-  }
-  /* tablet */
-@media (min-width: 768px) {
-    .gallery-grid {
-      grid-template-columns: repeat(3, 1fr);
-    }
-  }
-  
-  /* desktop */
-  @media (min-width: 1024px) {
-    .gallery-grid {
-      grid-template-columns: repeat(3, 1fr);
-    }
-  }
-  
-  /* telas grandes */
-  @media (min-width: 1440px) {
-    .gallery-grid {
-      grid-template-columns: repeat(4, 1fr);
-    }
-  }
-  @media (min-width: 1024px) and (max-width: 1439px) {
-    .gallery-grid {
-      grid-template-columns: repeat(3, 1fr);
-    }
-  }
