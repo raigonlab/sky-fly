@@ -246,11 +246,17 @@ nav.custom-navbar .navbar-nav .nav-link {
   
     font-weight: 500;
     transition: all 0.3s ease;
+
+    /* Overight bootstrap shadow */
+    border: none;
+    outline: none;
+    box-shadow: none;
   }
   
+  
   .cta-button:hover {
-    background: #ddd;
-    transform: translateY(-2px);
+    background: #093468;
+    transform: translateY(2px);
   }
 
 /* =========================
