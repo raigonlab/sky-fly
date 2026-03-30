@@ -22,6 +22,7 @@
     main {
         flex: 1;
     }
+       
 
 /* =========================
    NAVBAR CONTAINER
@@ -254,6 +255,8 @@ nav.custom-navbar .navbar-nav .nav-link {
     text-align: center;
     background: #111;
     color: white;
+    height: 200px;
+    align-content: center;
        
   }
 
