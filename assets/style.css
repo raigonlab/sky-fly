@@ -339,7 +339,7 @@ body {
     content: "";
     position: absolute;
     inset: 0;
-    background: rgba(0, 0, 0, 0.7);
+    background: rgba(0, 0, 0, 0.4);
     /* dark overlay for better readability */
 }
 
@@ -361,9 +361,17 @@ body {
 .form-group select {
     width: 100%;
     padding: 12px;
-    border-radius: 5px;
-    border: none;
-}
+  
+    background: rgba(255, 255, 255, 0.05); /* transparente */
+    border: 1px solid rgba(255, 255, 255, 0.1);
+  
+    color: white;
+    border-radius: 6px;
+  
+    outline: none;
+    transition: all 0.3s ease;
+  }
+
 
 /* =========================
    FOOTER
