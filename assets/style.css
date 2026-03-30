@@ -13,10 +13,12 @@
     flex-direction: column;
     min-height: 100vh;
     }
-    body h1 h2 {
+    body h1 {
         font-weight: 900;
     }
-    
+    h2 {
+        font-weight: 900;
+    }
     main {
         flex: 1;
     }
@@ -50,7 +52,8 @@
    ========================= */
 
 nav.custom-navbar .navbar-brand {
-    color: white; 
+    color: #ffffff; ;
+    padding-left: 15px; 
     /* forces the brand text (sky-fly) to be white */
 }
 
