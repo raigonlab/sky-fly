@@ -395,7 +395,38 @@ input[type="date"]::-webkit-calendar-picker-indicator {
     outline: none;
     transition: all 0.3s ease;
   }
-
+ /* TAHNK YOU PAGE */
+ .confirmation {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  
+    background: url("../assets/images/contact.png") center/cover no-repeat;
+    color: white;
+    text-align: center;
+    
+  }
+  
+  
+  .confirmation-box {
+    max-width: 400px;
+    padding: 40px;
+  
+    background: rgba(255,255,255,0.05);
+    border-radius: 40px;
+    backdrop-filter: blur(10px);
+    background: rgba(0, 0, 0, 0.6);
+  }
+  
+  .confirmation h1 {
+    margin-bottom: 15px;
+  }
+  
+  .confirmation p {
+    color: #ffff;
+    margin-bottom: 25px;
+  }
 
 /* =========================
    FOOTER
