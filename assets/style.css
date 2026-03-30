@@ -1,4 +1,25 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
+/* =========================
+   TYPOGRAPHY
+   ========================= */
+
+   body {
+    margin: 0;
+    font-family: 'Inter', sans-serif;
+    color: white;
+    background: #000;
+    
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    }
+    body h1 h2 {
+        font-weight: 900;
+    }
+    
+    main {
+        flex: 1;
+    }
 
 /* =========================
    NAVBAR CONTAINER
@@ -240,14 +261,14 @@ nav.custom-navbar .navbar-nav .nav-link {
     border-radius: 30px;
     margin-top: 10px;
   
-    background: rgb(14, 120, 232);
+    background: rgb(5, 67, 133);
     color: rgb(254, 254, 254);
     text-decoration: none;
   
     font-weight: 500;
     transition: all 0.3s ease;
 
-    /* Overight bootstrap shadow */
+    /* remove bootstrap shadow from formular button" */
     border: none;
     outline: none;
     box-shadow: none;
@@ -311,24 +332,6 @@ nav.custom-navbar .navbar-nav .nav-link {
     opacity: 0.9;
 }
 
-/* =========================
-   TYPOGRAPHY
-   ========================= */
-
-body {
-    margin: 0;
-    font-family: 'Inter', sans-serif;
-    color: white;
-    background: #000;
-    
-    display: flex;
-    flex-direction: column;
-    min-height: 100vh;
-    }
-    
-    main {
-        flex: 1;
-    }
 
 /* =========================
    CONTACT
