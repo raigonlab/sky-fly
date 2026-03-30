@@ -354,6 +354,12 @@ body {
     border-radius: 10px;
 }
 
+/*   Changing calendar icon color for white */
+input[type="date"]::-webkit-calendar-picker-indicator {
+    filter: invert(1);
+    cursor: pointer;
+  }
+
 /* form elements */
 
 .form-group input,
