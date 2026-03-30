@@ -412,6 +412,7 @@ input[type="date"]::-webkit-calendar-picker-indicator {
 .footer a {
   color: white;
   text-decoration: none;
+  f
 }
 
 .footer a:hover {
@@ -435,3 +436,32 @@ input[type="date"]::-webkit-calendar-picker-indicator {
     justify-content: space-between;
   }
 }
+
+.footer-socials {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+  }
+/* Burger menu center */
+
+
+@media (max-width: 991px) {
+    .navbar-collapse {
+      text-align: center;
+    }
+  
+    .navbar-nav {
+      width: 100%;
+    }
+  
+    .navbar-nav .nav-link {
+      display: block;
+      text-align: center;
+      padding: 10px 0;
+    }
+  }
+@media (max-width: 991px) {
+    .navbar-nav {
+      gap: 10px;
+    }
+  }
