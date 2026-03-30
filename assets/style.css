@@ -412,8 +412,7 @@ input[type="date"]::-webkit-calendar-picker-indicator {
 .footer a {
   color: white;
   text-decoration: none;
-  f
-}
+  }
 
 .footer a:hover {
   color: #ff6b00;
