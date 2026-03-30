@@ -110,7 +110,7 @@ nav.custom-navbar .navbar-nav .nav-link {
     content: "";
     position: absolute;
     inset: 0;
-    background: linear-gradient(to bottom, rgba(0,0,0,0.6), rgba(0,0,0,0.3));
+    background: linear-gradient(to bottom, rgba(0,0,0,0.6), rgba(0,0,0,1.0));
   }
   
   .experience-content {
@@ -124,13 +124,15 @@ nav.custom-navbar .navbar-nav .nav-link {
   }
   
   .experience-content h1 {
-    font-size: 3rem;
-    margin-bottom: 15px;
+    font-size: 2.2rem;
+    margin-bottom: 10px;
+    font-style: bold;
   }
   
   .experience-content p {
-    font-size: 1.2rem;
+    font-size: 1.rem;
     margin-bottom: 25px;
+    font-style: italic;
   }
 
   /* EXPERIENCE INFO */
@@ -171,6 +173,7 @@ nav.custom-navbar .navbar-nav .nav-link {
     text-align: center;
     background: #111;
     color: white;
+    
   }
 
 /* =========================
