@@ -137,7 +137,7 @@ nav.custom-navbar .navbar-nav .nav-link {
 
   /* EXPERIENCE INFO */
   .experience-info {
-    padding: 80px 20px;
+    padding: 80px 20px 0px;
     text-align: center;
     background: #111;
     color: white;
@@ -215,7 +215,7 @@ nav.custom-navbar .navbar-nav .nav-link {
   /* STARS */
   .stars {
     margin: 15px 0;
-    color: #FFD700;
+    color: #efd331;
   }
   
   /* NAME */
@@ -231,6 +231,26 @@ nav.custom-navbar .navbar-nav .nav-link {
     background: #111;
     color: white;
     
+  }
+
+  /* BUTTON CTA */
+  .cta-button {
+    display: inline-block;
+    padding: 12px 28px;
+    border-radius: 30px;
+    margin-top: 10px;
+  
+    background: rgb(14, 120, 232);
+    color: rgb(254, 254, 254);
+    text-decoration: none;
+  
+    font-weight: 500;
+    transition: all 0.3s ease;
+  }
+  
+  .cta-button:hover {
+    background: #ddd;
+    transform: translateY(-2px);
   }
 
 /* =========================
@@ -273,7 +293,7 @@ nav.custom-navbar .navbar-nav .nav-link {
     width: 100%;
     height: auto;
     object-fit: cover;
-    aspect-ratio: 1 / 1; /* mantém proporção bonita */
+    aspect-ratio: 1 / 1; /* ratio */
     border-radius: 8px;
     transition: transform 0.3s ease, opacity 0.3s ease;
 }
