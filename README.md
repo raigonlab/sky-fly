@@ -1,134 +1,42 @@
-# SKY-FLY
+## 🎯 UX Design Decisions
 
-## 🌍 Purpose
+The design of Sky-Fly was guided by user experience principles, ensuring clarity, emotional engagement, and ease of interaction.
 
-Sky-Fly is a user-centric front-end website designed to promote and showcase premium aerial experiences.
-The website allows users to explore flight options, view visual content, and easily book an experience.
+### Information Hierarchy
 
----
+The layout was structured to guide the user naturally through the experience:
 
-##  Business Goal
+- A strong hero section with a clear CTA ("Book Your Flight") was placed at the top to immediately communicate purpose and encourage action.
+- Key content is organized into distinct sections (experiences, testimonials, gallery, safety, contact), making information easy to find and understand.
+- Visual elements are prioritised to support quick scanning and decision-making.
 
-The main goal of this website is to generate bookings for flight experiences by converting visitors into customers through a clear and engaging user journey.
+### Visual Engagement
 
----
+- Large imagery and a gallery section were used to create emotional impact and inspire users.
+- The design avoids clutter, ensuring that foreground content is always clear and not distracted by background elements.
 
-##  Call to Action (CTA)
+### User Trust & Confidence
 
-**Primary CTA:**
- *"Book Your Flight"*
+- A testimonial section using card-based layout was implemented to build trust through social proof.
+- A dedicated safety section reinforces credibility and reduces hesitation before booking.
 
-This CTA is placed prominently throughout the website to guide users toward making a reservation.
+### User Control & Interaction
 
----
+- No automatic media playback is used; users remain in control of their interaction.
+- Clear buttons and navigation allow users to move through the website intuitively.
 
-## Target Users
+### Consistency
 
-* Adventure seekers looking for unique experiences
-* Tourists visiting the location
-* Couples searching for memorable activities
-* Individuals looking for premium lifestyle experiences
+- Visual style, layout, and interaction patterns remain consistent across all pages.
+- Repeated CTA buttons ensure users always have a clear next step.
 
----
+### Wireframing Process
 
-## User Goals
+Low-fidelity wireframes were created during the planning phase to define layout structure and content hierarchy before development.
 
-Users visiting the website want to:
+These wireframes guided:
+- Section placement (hero, cards, gallery, safety, contact)
+- CTA positioning
+- Content flow and prioritisation
 
-* Explore available flight experiences
-* View high-quality images and visual inspiration
-* Understand pricing and available options
-* Feel safe and confident about the experience
-* Book quickly and easily
-
----
-
-## User Stories
-
-* As an adventure seeker, I want to explore flight experiences so that I can choose the best option for me.
-
-* As a tourist, I want to see photos and videos so that I can feel confident booking the experience.
-
-* As a potential customer, I want to read safety information so that I feel secure before booking.
-
-* As a user, I want to book a flight online so that I can secure my spot quickly.
-
----
-
-## Features
-
-* Responsive design for desktop, tablet, and mobile devices
-* Navigation menu for easy browsing
-* Experience section with detailed options
-* Gallery section with high-quality visuals
-* Booking/contact form
-* Safety and information section
-
----
-
-## Design & UX
-
-The design follows key UX principles:
-
-* Clear information hierarchy
-* Simple and intuitive navigation
-* Consistent visual style
-* Strong visual impact through imagery
-* Accessibility considerations (contrast, alt text, readability)
-
----
-
-## Technologies Used
-
-* HTML5
-* CSS3
-
----
-
-## 📂 Project Structure
-
-* `index.html` (Home page)
-* `experiences.html`
-* `gallery.html`
-* `contact.html`
-* `assets/`
-
-  * `css/`
-  * `images/`
-
----
-
-## 🔧 Development Process
-
-The project is developed using Git and GitHub with regular commits.
-Each feature is built step by step following the defined user stories.
-
----
-
-## Testing
-
-The website is tested for:
-
-* Responsiveness across devices
-* Navigation functionality
-* Link validation (no broken links)
-* Layout consistency
-
----
-
-## 🚀 Deployment
-
-The project is deployed using **GitHub Pages**.
-
----
-
-## Screenshots
-
-(To be added after development)
-
----
-
-## Notes
-
-All content is custom and designed specifically for this project.
-No placeholder text (Lorem Ipsum) is used in the final version.
+This approach ensured a clear and efficient transition from concept to final implementation.
