@@ -74,7 +74,7 @@ source: https://ui.dev/amiresponsive?url=https://raigonlab.github.io/sky-fly
 * Navbar with clear navigation
 * CTA buttons placed strategically
 
-**User Flow**
+**User Flow Desktop**
 
 1. User lands on homepage
 2. Explores flight experience
@@ -101,6 +101,31 @@ source: https://ui.dev/amiresponsive?url=https://raigonlab.github.io/sky-fly
 
 5. Error page 404
 ![Contact - desktop](documentation/404-sky-fly.png)
+
+
+
+**Mobile User Flow**
+
+1. User lands on homepage
+![home - mobile](documentation/mobile-home.png)
+1. Hamburger menu
+![navbar - mobile](documentation/mobile-navbar.png)
+
+2. Explores flight experience
+![About - Mobile](documentation/mobile-experience.png)
+![Client Testimonials - Mobile](documentation/mobile-experience.png)
+
+3. Views gallery
+![Gallery - Mobile](documentation/mobile-gallery.png)
+![Gallery 2 - Mobile](documentation/mobile-galley-2.png)
+
+4. Goes to contact page
+![Contact - Mobile](documentation/mobile-contact.png)
+5. Submits booking request
+![Confirmation - Mobile](documentation/mobile-confirmation.png)
+
+5. Error page 404
+![Confirmation - Mobile](documentation/mobile-404.png)
 
 
 
@@ -134,7 +159,7 @@ Wireframes were created using Figma for mobile and desktop layouts.
 * Overlays: rgba(255, 255, 255, 0.05)
 
 Clean, minimal, and easy to read.
-![Sky-Fly Colour Scheme](documentation/colours-cheme.png)
+![Sky-Fly Colour Scheme](documentation/colours-cheme.jpeg)
 
 
 ---
@@ -150,7 +175,7 @@ Clean, minimal, and easy to read.
 
 Wireframes were created to define layout and structure across devices, starting with low-fidelity wireframes, which are simple sketches focused on basic layout, content placement, and user flow without visual details like colors or typography.
 
-| Page    | Screenshot                                       |
+| Page    | Photography                                       |
 | ------- | ------------------------------------------------ |
 | Home    | ![Home](documentation/wireframe-1.jpeg)       |
 | Gallery | ![Gallery](documentation/wireframe-3.jpeg) |
