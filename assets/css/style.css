@@ -428,6 +428,14 @@ input[type="date"]::-webkit-calendar-picker-indicator {
     max-width: 250px;
   }
 }
+
+/* Visually hides element while keeping it accessible to screen readers */
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+}
 /* =========================
    FOOTER
    ========================= */
