@@ -81,6 +81,28 @@ source: https://ui.dev/amiresponsive?url=https://raigonlab.github.io/sky-fly
 3. Views gallery
 4. Goes to contact page
 5. Submits booking request
+5. Error page 404
+
+1. User lands on homepage
+![home - desktop](documentation/home-sky-fly.png)
+
+2. Explores flight experience
+![about - desktop](documentation/fly-experience-sky-fly.png)
+![about - bottom desktop](documentation/fly-experience-bottom-sky-fly.png)
+
+3. Views gallery
+![Gallery - desktop](documentation/galley-sky-fly.png)
+
+4. Goes to contact page
+![Contact - desktop](documentation/contact-sky-fly.png)
+
+5. Submits booking request
+![Contact - desktop](documentation/thank-you-and-footer-sky-fly.png)
+
+5. Error page 404
+![Contact - desktop](documentation/404-sky-fly.png)
+
+
 
 ---
 
@@ -119,8 +141,8 @@ Clean, minimal, and easy to read.
 
 ## Typography
 
-* Clean and modern typography for readability
-* Font Awesome used for icons
+* The website uses **Inter**, sourced from **Google Fonts**, to provide a clean, modern, and highly readable typography across all devices.
+* Font Awesome was used for scalable and consistent icons throughout the interface.
 
 ---
 
@@ -160,6 +182,7 @@ Wireframes were created to define layout and structure across devices, starting 
 | CTA          | Encourages user interaction             |
 | 404 Page     | Custom error handling                   |
 | Favicon      | Branding element                        |
+| Thank You    | Confirmation page                        |
 
 ---
 
@@ -220,11 +243,12 @@ Live link: https://raigonlab.github.io/sky-fly
 
 * Images generated with AI tools
 * Icons from Font Awesome
+* Video from Pexel.com
 
 ---
 
 ## Acknowledgements
 
-Special thanks to my mentor Tim Nelson for his guidance and support throughout the project.
+Special thanks to my mentor Tim Nelson for his guidance and support throughout the project and Fernando Gonçalves for all support.
 
 ---
