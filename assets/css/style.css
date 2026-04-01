@@ -68,7 +68,7 @@ nav.custom-navbar .navbar-nav .nav-link {
 .hero {
   position: relative;
   height: 100vh;
-  background: url("./images/hero-ch-sunset.png") center/cover no-repeat;
+  background: url("../images/hero-ch-sunset.png") center/cover no-repeat;
 
   display: flex;
   justify-content: center;
@@ -318,7 +318,7 @@ nav.custom-navbar .navbar-nav .nav-link {
   position: relative;
   min-height: 100vh;
   padding: 100px 20px;
-  background: url("./images/contact.png") center/cover no-repeat;
+  background: url("../images/contact.png") center/cover no-repeat;
 }
 
 .contact-section::before {
@@ -374,7 +374,7 @@ input[type="date"]::-webkit-calendar-picker-indicator {
     justify-content: center;
     align-items: center;
 
-  background: url("../assets/images/contact.png") center/cover no-repeat;
+  background: url("../images/contact.png") center/cover no-repeat;
   text-align: center;
 }
 
@@ -389,6 +389,28 @@ input[type="date"]::-webkit-calendar-picker-indicator {
 
 .confirmation p {
   margin-bottom: 25px;
+}
+/* ===== 404 PAGE ONLY ===== */
+
+.page-404 {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.page-404 .text-center {
+  max-width: 600px;
+  padding: 20px;
+}
+
+.page-404 .text-center img {
+  max-width: 100%;
+  height: auto;
+}
+
+.page-404 .text-center h2 {
+  margin-bottom: 20px;
 }
 
 /* =========================
