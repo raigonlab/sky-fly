@@ -261,6 +261,8 @@ Live link: https://raigonlab.github.io/sky-fly
 * Bootstrap Documentation
 * Code Institute materials
 * ChatGPT (debugging & explanations)
+* Markdown.2bn.dev
+* Fonts.google.com
 
 ---
 
