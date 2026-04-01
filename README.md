@@ -86,7 +86,7 @@ source: https://ui.dev/amiresponsive?url=https://raigonlab.github.io/sky-fly
 1. User lands on homepage
 ![home - desktop](documentation/home-sky-fly.png)
 
-2. Explores flight experience
+2. Explores flight experience. A seamless silent background video showcasing the flight experience.
 ![about - desktop](documentation/fly-experience-sky-fly.png)
 ![about - bottom desktop](documentation/fly-experience-bottom-sky-fly.png)
 
