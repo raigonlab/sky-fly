@@ -412,7 +412,22 @@ input[type="date"]::-webkit-calendar-picker-indicator {
 .page-404 .text-center h2 {
   margin-bottom: 20px;
 }
+/* ===== 404 RESPONSIVE BEHAVIOR ===== */
 
+/* desktop → center */
+.page-404 {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* mobile → top */
+@media (max-width: 768px) {
+  .page-404 img {
+    max-width: 250px;
+  }
+}
 /* =========================
    FOOTER
    ========================= */
