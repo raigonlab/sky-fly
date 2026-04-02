@@ -114,7 +114,7 @@ Manual testing was conducted to ensure correct user interactions.
 * Prettier formatting issues → manually corrected
 ![Prettier](documentation/bugs/prettier-issue-bug.png)
 
-*The footer layout is messed up on the thank-you page.
+* The footer layout is messed up on the thank-you page.
 ![Footer](documentation/bugs/bug-footer.png)
 
 
