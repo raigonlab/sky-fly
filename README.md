@@ -17,6 +17,7 @@ The target audience includes tourists, adventure seekers, and individuals lookin
 
 The rationale behind this project was to combine design and functionality in a simple but effective way. As a designer and artist, I wanted to create something visually engaging while also applying solid front-end development practices. This project represents the balance between aesthetics and usability.
 
+#### [You can check the Live Here!](https://raigonlab.github.io/sky-fly)
 ---
 
 ![Sky-Fly responsive mockup](documentation/responsive_design.png)
