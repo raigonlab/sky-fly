@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
 
 /* =========================
-   TYPOGRAPHY
+   GERAL
    ========================= */
 
 body {
@@ -162,13 +162,6 @@ nav.custom-navbar .navbar-nav .nav-link {
   text-align: center;
 }
 
-@media (min-width: 768px) {
-  .experience-highlights {
-    flex-direction: row;
-    justify-content: center;
-  }
-}
-
 /* =========================
    TESTIMONIALS
    ========================= */
@@ -186,12 +179,6 @@ nav.custom-navbar .navbar-nav .nav-link {
 .testimonials-grid {
   display: grid;
   gap: 20px;
-}
-
-@media (min-width: 768px) {
-  .testimonials-grid {
-    grid-template-columns: repeat(3, 1fr);
-  }
 }
 
 .testimonial-card {
@@ -290,26 +277,6 @@ nav.custom-navbar .navbar-nav .nav-link {
   opacity: 0.9;
 }
 
-/* GRID CONTROL */
-
-@media (max-width: 768px) {
-  .gallery-grid {
-    grid-template-columns: 1fr;
-  }
-}
-
-@media (min-width: 768px) {
-  .gallery-grid {
-    grid-template-columns: repeat(3, 1fr);
-  }
-}
-
-@media (min-width: 1440px) {
-  .gallery-grid {
-    grid-template-columns: repeat(4, 1fr);
-  }
-}
-
 /* =========================
    CONTACT
    ========================= */
@@ -339,7 +306,9 @@ nav.custom-navbar .navbar-nav .nav-link {
   border-radius: 10px;
 }
 
-/* FORM */
+/* =========================
+   FORM
+   ========================= */
 
 .form-group input,
 .form-group textarea,
@@ -356,7 +325,9 @@ nav.custom-navbar .navbar-nav .nav-link {
   outline: none;
 }
 
-/* calendar icon */
+/* =========================
+   CALENDAR ICON
+   ========================= */
 
 input[type="date"]::-webkit-calendar-picker-indicator {
   filter: invert(1);
@@ -390,7 +361,10 @@ input[type="date"]::-webkit-calendar-picker-indicator {
 .confirmation p {
   margin-bottom: 25px;
 }
-/* ===== 404 PAGE ONLY ===== */
+
+/* ========================= 
+404 PAGE ONLY 
+========================= */
 
 .page-404 {
   min-height: 100vh;
@@ -412,21 +386,15 @@ input[type="date"]::-webkit-calendar-picker-indicator {
 .page-404 .text-center h2 {
   margin-bottom: 20px;
 }
-/* ===== 404 RESPONSIVE BEHAVIOR ===== */
+/* ========================= 
+404 RESPONSIVE BEHAVIOR 
+========================= */
 
-/* desktop → center */
 .page-404 {
   min-height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
-}
-
-/* mobile → top */
-@media (max-width: 768px) {
-  .page-404 img {
-    max-width: 250px;
-  }
 }
 
 /* Visually hides element while keeping it accessible to screen readers */
@@ -474,38 +442,71 @@ input[type="date"]::-webkit-calendar-picker-indicator {
   transform: scale(1.2);
 }
 
+.footer-socials {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+/* =========================
+  MEDIA QUERIES
+  ========================= */
+
+/* Grid Control */
+
+@media (max-width: 768px) {
+  .gallery-grid {
+    grid-template-columns: 1fr;
+  }
+  /* 404 Page */
+  .page-404 img {
+    max-width: 250px;
+  }
+}
+
 @media (min-width: 768px) {
+  .gallery-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  /* Highlights */
+  .experience-highlights {
+    flex-direction: row;
+    justify-content: center;
+  }
+
+  /* Footer */
   .footer-content {
     flex-direction: row;
     justify-content: space-between;
   }
+
+  /* Testimonials */
+  .testimonials-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
 }
 
-.footer-socials {
-    display: flex;
-    justify-content: center;
-    gap: 20px;
+@media (min-width: 1440px) {
+  .gallery-grid {
+    grid-template-columns: repeat(4, 1fr);
   }
+}
 /* Burger menu center */
 
+@media (max-width: 991px) {
+  .navbar-collapse {
+    text-align: center;
+  }
 
-@media (max-width: 991px) {
-    .navbar-collapse {
-      text-align: center;
-    }
-  
-    .navbar-nav {
-      width: 100%;
-    }
-  
-    .navbar-nav .nav-link {
-      display: block;
-      text-align: center;
-      padding: 10px 0;
-    }
+  .navbar-nav {
+    width: 100%;
+    gap: 10px;
   }
-@media (max-width: 991px) {
-    .navbar-nav {
-      gap: 10px;
-    }
+
+  .navbar-nav .nav-link {
+    display: block;
+    text-align: center;
+    padding: 10px 0;
   }
+}
