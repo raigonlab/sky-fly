@@ -240,7 +240,13 @@ All testing details are available in:
 
 ## Deployment
 
-The project was deployed using GitHub Pages.
+### Live Website
+
+- The site was deployed to GitHub pages. The steps to deploy are as follows:
+  - In the GitHub repository, navigate to the Settings tab
+  - From the Code and automation section drop-down menu, select the Pages.
+  - In the build and deployment area, choose from source "deploy from a branch" and after in Branch choosse the main branch and root and save.
+  - Once this is save, the page will be automatically refreshed with a detailed ribbon display to indicate the successful deployment (he take me more less 5 minuts for appear the link).
 
 Live link: https://raigonlab.github.io/sky-fly
 
