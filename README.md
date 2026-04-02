@@ -98,10 +98,11 @@ source: https://ui.dev/amiresponsive?url=https://raigonlab.github.io/sky-fly
 
 
 
-**Mobile User Flow**
+**User Flow Mobile**
 
 1. User lands on homepage
 ![home - mobile](documentation/mobile-home.png)
+
 1. Hamburger menu
 ![navbar - mobile](documentation/mobile-navbar.png)
 
