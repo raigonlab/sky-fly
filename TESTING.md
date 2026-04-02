@@ -67,6 +67,7 @@ Lighthouse audits were performed on all pages.
 | Page    | Mobile                                                 | Desktop                                                  |
 | ------- | ------------------------------------------------------ | -------------------------------------------------------- |
 | Home    | ![mobile](documentation/lighthouse/mobile-home.png)    | ![desktop](documentation/lighthouse/desktop-home.png)    |
+| Fly-Experience    | ![mobile](documentation/lighthouse/mobile-fly-experience.png)    | ![desktop](documentation/lighthouse/desktop-fly-experience.png)    |
 | Gallery | ![mobile](documentation/lighthouse/mobile-gallery.png) | ![desktop](documentation/lighthouse/desktop-gallery.png) |
 | Contact | ![mobile](documentation/lighthouse/mobile-contact.png) | ![desktop](documentation/lighthouse/desktop-contact.png) |
 | 404     | ![mobile](documentation/lighthouse/mobile-404.png)     | ![desktop](documentation/lighthouse/desktop-404.png)     |
