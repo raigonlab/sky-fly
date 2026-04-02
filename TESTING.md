@@ -80,6 +80,8 @@ Manual testing was conducted to ensure correct user interactions.
 | Page       | Expectation                         | Test                        | Result                 |
 | ---------- | ----------------------------------- | --------------------------- | ---------------------- |
 | Contact    | Form should not submit empty fields | Tried submitting empty form | Blocked successfully   |
+|![formular](documentation/defensive/bugs.png)     | 
+
 | Contact    | Email must be valid                 | Inserted invalid email      | Validation triggered   |
 | Navigation | Links should work                   | Clicked all links           | All working            |
 | Gallery    | Images should display correctly     | Tested resizing             | Responsive and correct |
@@ -104,8 +106,17 @@ Manual testing was conducted to ensure correct user interactions.
 ### Fixed Bugs
 
 * Navbar collapsing issue on mobile → fixed with Bootstrap classes
+![Navbar](documentation/bugs/bug-navbar.png)
+
 * Image stretching in gallery → fixed with CSS grid adjustments
+![Gallery](documentation/bugs/bug-gallery.png)
+
 * Prettier formatting issues → manually corrected
+![Prettier](documentation/bugs/prettier-issue-bug.png)
+
+*The footer layout is messed up on the thank-you page.
+![Footer](documentation/bugs/bug-footer.png)
+
 
 ---
 
