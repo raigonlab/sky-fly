@@ -28,7 +28,7 @@ I have used the recommended [CSS Jigsaw Validator](documentation/testing/css-tes
 
 | File      | URL                                                                                   | Screenshot                                                       | Notes                                         |
 | --------- | ------------------------------------------------------------------------------------- | ---------------------------------------------------------------- | --------------------------------------------- |
-| style.css | https://jigsaw.w3.org/css-validator/validator?uri=https://raigonlab.github.io/sky-fly | ![css validation](documentation/testing/css-testing.png) | Minor warnings related to Bootstrap (ignored) |
+| style.css | https://jigsaw.w3.org/css-validator/validator | ![css validation](documentation/testing/css-testing.png) | Minor warnings related to Bootstrap (ignored) |
 
 ---
 
@@ -38,7 +38,8 @@ The project was tested across multiple screen sizes using browser developer tool
 
 | Page      | Mobile                                                       | Tablet                                                       | Desktop                                                        | Notes                 |
 | --------- | ------------------------------------------------------------ | ------------------------------------------------------------ | -------------------------------------------------------------- | --------------------- |
-| Home      | ![mobile](documentation/responsiveness/mobile-home.png)      | ![tablet](documentation/responsiveness/tablet-home.png)      | ![desktop](documentation/responsiveness/desktop-home.png)      | Works as expected     |
+| Home      | ![mobile](documentation/responsiveness/mobile-home.png)      | ![tablet](documentation/responsiveness/tablet-home.png)      | ![desktop](documentation/responsiveness/desktop-home.png)
+| Fly Experience      | ![mobile](documentation/responsiveness/mobile-fly-experience.png)      | ![tablet](documentation/responsiveness/tablet-fly-experience.png)      | ![desktop](documentation/responsiveness/desktop-fly-experience.png)      | Works as expected     |
 | Gallery   | ![mobile](documentation/responsiveness/mobile-gallery.png)   | ![tablet](documentation/responsiveness/tablet-gallery.png)   | ![desktop](documentation/responsiveness/desktop-gallery.png)   | Grid adapts correctly |
 | Contact   | ![mobile](documentation/responsiveness/mobile-contact.png)   | ![tablet](documentation/responsiveness/tablet-contact.png)   | ![desktop](documentation/responsiveness/desktop-contact.png)   | Form remains usable   |
 | Thank You | ![mobile](documentation/responsiveness/mobile-thank-you.png) | ![tablet](documentation/responsiveness/tablet-thank-you.png) | ![desktop](documentation/responsiveness/desktop-thank-you.png) | Layout consistent     |
