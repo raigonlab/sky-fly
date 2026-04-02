@@ -78,13 +78,6 @@ source: https://ui.dev/amiresponsive?url=https://raigonlab.github.io/sky-fly
 **User Flow Desktop**
 
 1. User lands on homepage
-2. Explores flight experience
-3. Views gallery
-4. Goes to contact page
-5. Submits booking request
-5. Error page 404
-
-1. User lands on homepage
 ![home - desktop](documentation/home-sky-fly.png)
 
 2. Explores flight experience. A seamless silent background video showcasing the flight experience.
