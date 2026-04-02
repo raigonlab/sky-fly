@@ -268,6 +268,6 @@ Live link: https://raigonlab.github.io/sky-fly
 
 ## Acknowledgements
 
-Special thanks to my mentor Tim Nelson for his guidance and support throughout the project and Fernando Gonçalves for all support.
+Special thanks to my mentor Tim Nelson for his guidance and support throughout the project, also Tindy and Fernando Gonçalves for all support.
 
 ---
