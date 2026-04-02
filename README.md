@@ -226,6 +226,8 @@ Wireframes were created to define layout and structure across devices, starting 
 
 GitHub Projects and Issues were used to plan and manage the project.
 
+[Link to Project Board](https://github.com/users/raigonlab/projects/1)
+
 ---
 
 ## Testing
