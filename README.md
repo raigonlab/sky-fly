@@ -96,8 +96,6 @@ source: https://ui.dev/amiresponsive?url=https://raigonlab.github.io/sky-fly
 5. Error page 404
 ![Contact - desktop](documentation/404-sky-fly.png)
 
-
-
 **User Flow Mobile**
 
 1. User lands on homepage
@@ -122,8 +120,6 @@ source: https://ui.dev/amiresponsive?url=https://raigonlab.github.io/sky-fly
 5. Error page 404
 ![Confirmation - Mobile](documentation/mobile-404.png)
 
-
-
 ---
 
 #### 4. Skeleton
@@ -131,7 +127,6 @@ source: https://ui.dev/amiresponsive?url=https://raigonlab.github.io/sky-fly
 Wireframes were created using Figma for mobile and desktop layouts.
 ![Sky-Fly wirefrime telefon](documentation/wirefrime-telefon.png)
 ![Sky-Fly wirefrime desktop](documentation/wirefrime-desktop.png)
-
 
 ---
 
